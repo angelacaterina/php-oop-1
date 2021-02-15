@@ -65,12 +65,12 @@ class Film{
     }
 }
 $film1 = new Film('A Clockwork Orange', 'Stanley Kubrick', 1971);
-$film2 = new Film('The Drk Knight', 'Christopher Nolan', 2008);
+$film2 = new Film('The Dark Knight', 'Christopher Nolan', 2008);
 $film3 = new Film('Fight Club', 'David Fincher', 1999);
 $film4 = new Film('Catch Me If You Can', 'Steven Spielberg', 2002);
 $film5 = new Film('Forrest Gump', 'Robert Zemeckis', 1994);
 $film6 = new Film('A Clockwork Orange', 'Stanley Kubrick', 1971);
-$film7 = new Film('The Drk Knight', 'Christopher Nolan', 2008);
+$film7 = new Film('The Dark Knight', 'Christopher Nolan', 2008);
 $film8 = new Film('Fight Club', 'David Fincher', 1999);
 $film9 = new Film('Catch Me If You Can', 'Steven Spielberg', 2002);
 $film10 = new Film('Forrest Gump', 'Robert Zemeckis', 1994);
