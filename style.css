@@ -21,48 +21,59 @@ main#main_content{
     width: 100%;
     height: 100%;
     padding: 30px 0;
-    
+    font-family: 'Teko', sans-serif;
 }
 section{
     margin: 20px 0;
 }
 section h2{
     padding: 10px;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 4px; 
+    color: white;
 }
-
 section div.card{
     padding: 20px;
     border-radius: 6px;
     line-height: 2;
+    letter-spacing: 1px; 
+    font-size: 20px;
+    text-align: center;
 }
 section div.card h3{
     text-align: center;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-bottom: 5px;
+    font-weight: 400;
+    font-style: oblique;
 }
 
 section#fruits h2{
-    background-color: antiquewhite;
+    background-color: rgb(8, 118, 138);
 }
 section#fruits div.card{
-    border: 2px solid antiquewhite;
-    background-color: antiquewhite;
+    border: 2px solid  rgb(8, 118, 138);
+    background-color:  rgb(8, 118, 138);
+    color: rgb(8, 44, 61);
 }
-
-
+section#fruits div.card h3{
+    color: white;
+}
 
 section#film h2{
     background-color:rgb(75, 120, 138);
 }
-
 section#film div.card{
     width: 200px;
-    height: 200px;
     border: 2px solid rgb(75, 120, 138);
-    background-color: rgb(75, 120, 138);
-    text-align: center;
+    background-color:  rgb(75, 120, 138);
     margin: 10px 0;
+    color: rgb(8, 44, 61);
+}
+section#film div.card h3{
+    color: white;
 }
