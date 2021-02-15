@@ -24,7 +24,6 @@ class Fruit{
         return $this->taste;
     }
 }
-
 $apple = new Fruit('apple' , 'green', 'sweet');
 $lime = new Fruit('lime', 'green', 'sour');
 $lemon = new Fruit('lemon', 'yellow', 'sour');
@@ -40,6 +39,43 @@ var_dump($fruits);
 //     echo $values->getTaste();
 // }
 // var_dump($apple->getName());
+
+/** Films class
+ * @author Angela Caterina Gallo angela@gmail.com
+ * @copyright 2021 Angela
+*/
+class Film{
+    public $title;
+    public $filmDirector;
+    public $year;
+
+    public function __construct( string $title,  string $filmDirector,  int $year){
+        $this->title  = $title;
+        $this->filmDirector  = $filmDirector;
+        $this->year  = $year;
+    }
+    public function getTitle(){
+        return $this->title;
+    }
+    public function getFilmDirector(){
+        return $this->filmDirector;
+    }
+    public function getYear(){
+        return $this->year;
+    }
+}
+$film1 = new Film('A Clockwork Orange', 'Stanley Kubrick', 1971);
+$film2 = new Film('The Drk Knight', 'Christopher Nolan', 2008);
+$film3 = new Film('Fight Club', 'David Fincher', 1999);
+$film4 = new Film('Catch Me If You Can', 'Steven Spielberg', 2002);
+$film5 = new Film('Forrest Gump', 'Robert Zemeckis', 1994);
+$film6 = new Film('A Clockwork Orange', 'Stanley Kubrick', 1971);
+$film7 = new Film('The Drk Knight', 'Christopher Nolan', 2008);
+$film8 = new Film('Fight Club', 'David Fincher', 1999);
+$film9 = new Film('Catch Me If You Can', 'Steven Spielberg', 2002);
+$film10 = new Film('Forrest Gump', 'Robert Zemeckis', 1994);
+$films = [$film1, $film2, $film3, $film4, $film5, $film6, $film7, $film8, $film9, $film10];
+var_dump($films);
 
 ?>
 
@@ -58,12 +94,25 @@ var_dump($fruits);
                 <div class="container">
                     <?php 
                         foreach($fruits as $values){?>
-                        <div class="card">
-                            <h3><?php echo $values->getName()?></h3>
-                            <p>Color: <?php echo $values->getColor()?></p>
-                            <p>Taste: <?php echo $values->getTaste()?></p>
-                        </div>
-                        
+                            <div class="card">
+                                <h3><?php echo $values->getName()?></h3>
+                                <p>Color: <?php echo $values->getColor()?></p>
+                                <p>Taste: <?php echo $values->getTaste()?></p>
+                            </div>
+                        <?php }
+                    ?>
+                </div>
+            </section>
+            <section id="film">
+                <h2>Films</h2>
+                <div class="container">
+                    <?php 
+                        foreach($films as $value){?>
+                            <div class="card">
+                                <h3><?php echo $value->getTitle()?></h3>
+                                <p><?php echo $value->getFilmDirector()?></p>
+                                <p><?php echo $value->getYear()?></p>
+                            </div>
                         <?php }
                     ?>
                 </div>

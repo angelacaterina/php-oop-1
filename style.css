@@ -6,6 +6,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 }
 div.container{
     width: 80%;
@@ -13,6 +14,7 @@ div.container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 main#main_content{
@@ -21,23 +23,46 @@ main#main_content{
     padding: 30px 0;
     
 }
-section#fruits h2{
-    background-color: antiquewhite;
+section{
+    margin: 20px 0;
+}
+section h2{
     padding: 10px;
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
 }
 
-section#fruits div.card{
+section div.card{
     padding: 20px;
-    border: 2px solid antiquewhite;
     border-radius: 6px;
-    background-color: antiquewhite;
     line-height: 2;
 }
-div.card h3{
+section div.card h3{
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 5px;
+}
+
+section#fruits h2{
+    background-color: antiquewhite;
+}
+section#fruits div.card{
+    border: 2px solid antiquewhite;
+    background-color: antiquewhite;
+}
+
+
+
+section#film h2{
+    background-color:rgb(75, 120, 138);
+}
+
+section#film div.card{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(75, 120, 138);
+    background-color: rgb(75, 120, 138);
+    text-align: center;
+    margin: 10px 0;
 }
