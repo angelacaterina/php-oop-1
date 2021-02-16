@@ -97,9 +97,15 @@ var_dump($films);
                     <?php 
                         foreach($fruits as $values){?>
                             <div class="card">
-                                <h3><?php echo $values->getName()?></h3>
+                                <!-- Modo 1: utilizzo di una funzione GET -->
+                                <!-- <h3><?php echo $values->getName()?></h3>
                                 <p>Color: <?php echo $values->getColor()?></p>
-                                <p>Taste: <?php echo $values->getTaste()?></p>
+                                <p>Taste: <?php echo $values->getTaste()?></p> -->
+
+                                <!-- Modo 2: applico direttamente il valore che voglio prendere -->
+                                <h3><?php echo $values->name ?></h3>
+                                <p>Color: <?php echo $values->color ?></p>
+                                <p>Taste: <?php echo $values->taste ?></p>
                             </div>
                         <?php }
                     ?>
