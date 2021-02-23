@@ -32,7 +32,7 @@ $banana = new Fruit('banana', 'yellow', 'sweet');
 
 // var_dump($apple, $lime , $lemon , $orange, $banana);
 $fruits = [$apple, $lime , $lemon , $orange, $banana];
-var_dump($fruits);
+// var_dump($fruits);
 // foreach($fruits as $values){
 //     echo $values->getName();
 //     echo $values->getColor();
@@ -75,7 +75,7 @@ $film8 = new Film('Fight Club', 'David Fincher', 1999);
 $film9 = new Film('Catch Me If You Can', 'Steven Spielberg', 2002);
 $film10 = new Film('Forrest Gump', 'Robert Zemeckis', 1994);
 $films = [$film1, $film2, $film3, $film4, $film5, $film6, $film7, $film8, $film9, $film10];
-var_dump($films);
+// var_dump($films);
 
 ?>
 
